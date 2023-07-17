@@ -1,0 +1,27 @@
+body
+{
+    background-color: #000;
+}
+
+#title
+{
+    text-align: center;
+    color: #FFF;
+}
+
+p
+{
+    color: #FFF;
+    text-align: center;
+    font-size: 5em;
+}
+
+noscript
+{
+    height: 300px;
+    width: 500px;
+    border: solid 1px white;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+}
