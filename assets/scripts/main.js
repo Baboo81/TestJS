@@ -40,3 +40,13 @@ switch (day) {
      break;
 }
 document.getElementById('myTitle').innerHTML = msg;
+
+/******************************************************* */
+
+//Création d'une balise <noscript> :
+const noscript = document.createElement('noscript');
+const txt = "Votre navigateur n'accepte pas les scripts JavaScript ! La navigation sur ce site ne sera pas possible 😕";
+noscript.innerHTML = txt;
+document.getElementById('myBody').appendChild(noscript);
+
+
