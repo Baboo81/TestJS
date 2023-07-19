@@ -73,7 +73,27 @@ for(let n = start; n <= max; n++) {
 };
 
 /********************************************************** */
+//Fct de conversion :
+console.log(parseInt("200")); //Conversion d'une string en number
+console.log(parseInt("25.34"));
+console.log(parseInt("FF", 16));
 
+//Création d'un modal :
+
+document.getElementById('btn-modal').addEventListener('click', function() {
+    document.getElementById('overlay').classList.add('is-visible');
+    document.getElementById('modal').classList.add('is-visible');
+  });
+  
+  document.getElementById('close-btn').addEventListener('click', function() {
+    document.getElementById('overlay').classList.remove('is-visible');
+    document.getElementById('modal').classList.remove('is-visible');
+  });
+  document.getElementById('overlay').addEventListener('click', function() {
+    document.getElementById('overlay').classList.remove('is-visible');
+    document.getElementById('modal').classList.remove('is-visible');
+  });
+  
 
 
 
