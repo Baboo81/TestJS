@@ -3,16 +3,10 @@ body
     background-color: #8064f3;
 }
 
-#title
+h1
 {
-    text-align: center;
     color: #FFF;
-}
-
-#myTitle
-{
     text-align: center;
-    color: #FFF;
 }
 
 p

@@ -49,4 +49,31 @@ const txt = "Votre navigateur n'accepte pas les scripts JavaScript ! La navigati
 noscript.innerHTML = txt;
 document.getElementById('myBody').appendChild(noscript);
 
+/******************************************************* */
+
+//Opérateur ternaire :
+//let nb = "";
+//console.log("Votre devis comporte " + nb + "article" + (nb > 1 ? "s":""));
+
+/******************************************************** */
+
+const title3 = document.createElement('h1');
+title3.setAttribute("id", "loop");
+document.getElementById('myBody').appendChild(title3);
+
+let somme = 0;
+let start = 0;
+let max = 10;
+
+
+for(let n = start; n <= max; n++) {
+    let result = n + 1;
+    console.log(somme =  n + 1);
+    document.getElementById('loop').innerHTML = "La somme = " + result;
+};
+
+/********************************************************** */
+
+
+
 
