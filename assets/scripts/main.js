@@ -112,8 +112,13 @@ let nbArticle = 1;
 let resultPrice = `"Votre panier vaut"  + ${price} + "euro" + ${getPluriel(price)}`;
 let resultArticle = `"Il contient " + ${nbArticle} + "article" + ${getPluriel(nbArticle)}`;
 
+console.log("Votre panier vaut " + price + "euro" + getPluriel(price));
+console.log("Il contient " + nbArticle + "article" + getPluriel(nbArticle));
+
 document.getElementById('fctPluriel').innerHTML = resultPrice;
 document.getElementById('article').innerHTML = resultArticle;
+
+
 
 
 
