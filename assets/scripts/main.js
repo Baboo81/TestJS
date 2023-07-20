@@ -115,10 +115,21 @@ let resultArticle = `"Il contient " + ${nbArticle} + "article" + ${getPluriel(nb
 console.log("Votre panier vaut " + price + "euro" + getPluriel(price));
 console.log("Il contient " + nbArticle + "article" + getPluriel(nbArticle));
 
-document.getElementById('fctPluriel').innerHTML = resultPrice;
-document.getElementById('article').innerHTML = resultArticle;
+//document.getElementById('fctPluriel').innerHTML = resultPrice;
+//document.getElementById('article').innerHTML = resultArticle;
 
+//Fct timer :
 
+const title6 = document.createElement('h1');
+title6.setAttribute("id", "compteur");
+document.getElementById('myBody').appendChil(title6);
+
+const nb = 0;
+
+setInterval (function() {
+    nb ++;
+    document.getElementById('title6').innerHTML = nb;
+}, 250);
 
 
 
