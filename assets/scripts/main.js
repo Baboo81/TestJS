@@ -78,7 +78,7 @@ console.log(parseInt("200")); //Conversion d'une string en number
 console.log(parseInt("25.34"));
 console.log(parseInt("FF", 16));
 
-//Création d'un modal :
+//Création d'un modal avec des fonctions :
 
 document.getElementById('btn-modal').addEventListener('click', function() {
     document.getElementById('overlay').classList.add('is-visible');
@@ -94,6 +94,26 @@ document.getElementById('btn-modal').addEventListener('click', function() {
     document.getElementById('modal').classList.remove('is-visible');
   });
   
+//Autre fonction :
+
+const title4 = document.createElement('h1');
+const title5 = document.createElement('h2');
+title4.setAttribute("id", "ftcPluriel");
+title5.setAttribute("id", "article");
+document.getElementById('myBody').appendChild(title4);
+document.getElementById('myBody').appendChild(title5);
+
+function getPluriel(nb) {
+    return nb > 1 ? "s" : "";
+};
+
+let price = 50;
+let nbArticle = 1;
+let resultPrice = `"Votre panier vaut"  + ${price} + "euro" + ${getPluriel(price)}`;
+let resultArticle = `"Il contient " + ${nbArticle} + "article" + ${getPluriel(nbArticle)}`;
+
+document.getElementById('fctPluriel').innerHTML = resultPrice;
+document.getElementById('article').innerHTML = resultArticle;
 
 
 
