@@ -109,11 +109,11 @@ function getPluriel(nb) {
 
 let price = 50;
 let nbArticle = 1;
-let resultPrice = `"Votre panier vaut"  + ${price} + "euro" + ${getPluriel(price)}`;
-let resultArticle = `"Il contient " + ${nbArticle} + "article" + ${getPluriel(nbArticle)}`;
+let resultPrice = `"Votre panier vaut" ${price} "euro"  ${getPluriel(price)}`;
+let resultArticle = `"Il contient " ${nbArticle} "article" ${getPluriel(nbArticle)}`;
 
-console.log("Votre panier vaut " + price + "euro" + getPluriel(price));
-console.log("Il contient " + nbArticle + "article" + getPluriel(nbArticle));
+//console.log("Votre panier vaut " + price + "euro" + getPluriel(price));
+//console.log("Il contient " + nbArticle + "article" + getPluriel(nbArticle));
 
 //document.getElementById('fctPluriel').innerHTML = resultPrice;
 //document.getElementById('article').innerHTML = resultArticle;
@@ -122,7 +122,7 @@ console.log("Il contient " + nbArticle + "article" + getPluriel(nbArticle));
 
 const title6 = document.createElement('h1');
 title6.setAttribute("id", "compteur");
-document.getElementById('myBody').appendChil(title6);
+document.getElementById('myBody').appendChild(title6);
 
 const nb = 0;
 
@@ -131,5 +131,16 @@ setInterval (function() {
     document.getElementById('title6').innerHTML = nb;
 }, 250);
 
+/******************************************************************************* */
+
+//Conversion de types :
+
+const fecha = new Date();
+const number = 10;
+const tab = new Array(1,2,8,32);
+
+console.log(fecha.toString());
+console.log(number.toString());
+console.log(tab.toString());
 
 
