@@ -129,7 +129,7 @@ const nb = 0;
 setInterval (function() {
     nb ++;
     document.getElementById('title6').innerHTML = nb;
-}, 250);
+}, 2500);
 
 /******************************************************************************* */
 
