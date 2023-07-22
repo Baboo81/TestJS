@@ -143,4 +143,36 @@ console.log(fecha.toString());
 console.log(number.toString());
 console.log(tab.toString());
 
+//Concaténation de chaîne :
 
+const string = "Hello " + "  World";
+console.log(string); 
+
+const visitor = 100;
+const msg2 = " Vous êtes le ".length-1; 
+
+console.log(msg2);
+
+//fct qui retourne le nom d'une page web ou d'une adresse mail : 
+
+function getDomaine (txt) {
+    if (txt.indexOf("@")>0) { //adresse mail
+        return txt.substring(txt.indexOf("@")+1);
+    } else if (txt.indexOf("://")>0) { //page web
+        if (txt.indexOf("/", 8)>0) {
+            return txt.substring(txt.indexOf("://")+3, txt.indexOf("/", 8));
+        } else {
+            return txt.substring(txt.indexOf("://")+3);
+        }
+    } else { // aucun des deux, retourne vide
+        return "";
+    }
+}
+
+const page = "http://wwww.toutjavascript.com/reference/ref-string.length.php";
+const google = "https://wwww.google.com";
+const mail = "chrisrodriguez@hotmail.be";
+
+console.log(getDomaine(page));
+console.log(getDomaine(google));
+console.log(getDomaine(mail));
