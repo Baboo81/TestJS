@@ -176,3 +176,5 @@ const mail = "chrisrodriguez@hotmail.be";
 console.log(getDomaine(page));
 console.log(getDomaine(google));
 console.log(getDomaine(mail));
+
+/***************************************************************** */
