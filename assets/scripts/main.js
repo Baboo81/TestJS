@@ -184,6 +184,8 @@ console.log(getDomaine(mail));
 /***************************************************************** */
 //Table ASCII :
 
+const line3 = document.createElement('hr');
+
 var ascii = "";
 
 for (var i = 0; i < 256; i++){
@@ -195,3 +197,7 @@ for (var i = 0; i < 256; i++){
 document.getElementById('ascii').innerHTML=ascii;
 console.log("Valeur de i après la boucle : " + i);
 console.log("Longueur de la chaîne ascii : " + ascii.length)
+document.getElementById('myBody').appendChild(line3);
+
+/******************************************************************** */
+//Expressions régulières (REGEX) :
