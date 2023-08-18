@@ -1,14 +1,18 @@
 const title = document.createElement('h1');
+const line1 = document.createElement('hr');
 title.setAttribute("id", "title");
 title.innerHTML = "COUCOU !";
 document.getElementById('myBody').appendChild(title);
+document.getElementById('myBody').appendChild(line1);
 
 /********************************************************* */
 
 //Script qui détermine le jour de la semaine avec un switch :
 const title2 = document.createElement('h1');
+const line2 = document.createElement('hr');
 title2.setAttribute("id", "myTitle");
 document.getElementById('myBody').appendChild(title2);
+document.getElementById('myBody').appendChild(line2);
 let date = new Date();
 let day = date.getDay();
 let msg = "";
