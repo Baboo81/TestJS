@@ -178,3 +178,16 @@ console.log(getDomaine(google));
 console.log(getDomaine(mail));
 
 /***************************************************************** */
+//Table ASCII :
+
+var ascii = "";
+
+for (var i = 0; i < 256; i++){
+        ascii+="<div class='indice'>"+i+" </div>";
+        ascii+="<div class='char'>"+String.fromCharCode(i)+"</div>";
+        ascii+="<div class='break'></div>";
+        }
+
+document.getElementById('ascii').innerHTML=ascii;
+console.log("Valeur de i après la boucle : " + i);
+console.log("Longueur de la chaîne ascii : " + ascii.length)

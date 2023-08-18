@@ -109,4 +109,36 @@ body {
     opacity: 1;
     pointer-events: auto;
   }
+
+  /*Table ascii*/
+  div.indice, div.char
+  {
+    display: inline-block;
+  }
+
+  div.indice
+  {
+    color: #999;
+    text-align: right;
+    width: 30px;
+  }
+
+  div.char
+  {
+    text-align: center;
+    font-weight: bold;
+    width: 40px;
+  }
+
+  div.break
+  {
+    clear: both;
+  }
+
+  div.ascii
+  {
+    -webkit-column-count: 8;
+    -moz-column-count: 8;
+    column-count: 8;
+  }
   
