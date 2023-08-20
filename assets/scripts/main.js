@@ -201,3 +201,10 @@ document.getElementById('myBody').appendChild(line3);
 
 /******************************************************************** */
 //Expressions régulières (REGEX) :
+
+//RegExp(String motif [, String option]); Le paramètre motif est une chaîne de caract
+//contenant le programme de l'expression, le param option est facultatif.
+//Autre façon d'écrire : const regex = /motif/option;
+
+const regex = RegExp([0-9]);
+
